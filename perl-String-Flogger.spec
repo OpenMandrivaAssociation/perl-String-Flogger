@@ -11,7 +11,9 @@ Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/String/%{upstream_name}-%{upstream_version}.tar.gz
 
-
+BuildRequires: perl(JSON)
+BuildRequires: perl(Params::Util)
+BuildRequires: perl(Sub::Exporter)
 BuildArch: noarch
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
 
