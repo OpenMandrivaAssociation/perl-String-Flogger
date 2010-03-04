@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 Summary:    String munging for loggers
 License:    GPL+ or Artistic
@@ -14,8 +14,11 @@ Source0:    http://www.cpan.org/modules/by-module/String/%{upstream_name}-%{upst
 BuildRequires: perl(JSON)
 BuildRequires: perl(Params::Util)
 BuildRequires: perl(Sub::Exporter)
+
 BuildArch: noarch
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
+
+Requires: perl(JSON)
 
 %description
 no description found
@@ -28,7 +31,7 @@ no description found
 %make
 
 %check
-make test
+%make test
 
 %install
 rm -rf %buildroot
@@ -42,5 +45,3 @@ rm -rf %buildroot
 %doc Changes LICENSE README
 %{_mandir}/man3/*
 %perl_vendorlib/*
-
-
