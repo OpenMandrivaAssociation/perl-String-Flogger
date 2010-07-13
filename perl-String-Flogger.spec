@@ -1,9 +1,9 @@
 %define upstream_name    String-Flogger
-%define upstream_version 1.001
+%define upstream_version 1.101240
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:    String munging for loggers
 License:    GPL+ or Artistic
