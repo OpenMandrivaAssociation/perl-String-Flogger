@@ -1,15 +1,15 @@
 %define upstream_name    String-Flogger
-%define upstream_version 1.101241
+%define upstream_version 1.101243
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%perl_convert_version 1.101243
+Release:	1
 
 Summary:	String munging for loggers
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/String/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/String/String-Flogger-1.101243.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(JSON)
@@ -65,4 +65,5 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Fri May 29 2009 cpan2dist 1.001-1mdv
 - initial mdv release, generated with cpan2dist
+
 
